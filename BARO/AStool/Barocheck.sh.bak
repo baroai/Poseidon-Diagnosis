@@ -1,0 +1,10 @@
+#!/bin/bash
+echo 'baro'| sudo chmod 644 /var/log/syslog
+filedate=$(date +%y%m%d)_$(date +%H%M)
+# echo $filedate
+/home/oem/BARO/AStool/systemcheck.sh > /home/oem/BARO/ASresult/Poseidon_$(date +%y%m%d)_$(date +%H%M)_log.txt
+echo 'Processing all Done!!'
+echo 'This will be closed soon'
+echo 'logfile will locate under /home/oem/BARO/ASresult/'
+echo 'check your Poseidon!!'
+sleep 10
